@@ -1,2 +1,2 @@
-# Contact-Management
-This application is based on java and MySQL used to create new contact, update existing contact, retrieve contact and also delete contacts from the list by performing curd operations 
+# Todo-V2
+This repository consists of an todo application developed using angular and springboot which allows user to perform CURD operations in the MySQL database.
