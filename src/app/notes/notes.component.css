@@ -1,0 +1,62 @@
+#heading{
+    font-size: 50px;
+}
+input{
+    height: 40px;
+    width: 480px;
+    font-size: 25px;
+    margin-left: 15px;
+}
+button{
+    background-color: #ffffff;
+    height: 44px;
+    width: 80px;
+    margin-left: 15px;
+    border-radius: 10%;
+    text-align: center;
+    color:black;
+    font-size: 25px;
+}
+
+.items{
+    list-style-type: none;
+    padding-left :0%;
+    
+}
+.items li{
+    padding: 15px;
+    background-color:#EAF0F1;/*#21a85c*/
+    margin-left: 15px;
+    width: 400px;
+    margin-top: 10px;
+    border-radius: 5% ;
+    font-size: 23px;
+}
+.items li .editButton{
+    background-color:#586776;
+    padding: 17px;
+    margin-left: -16px;
+    border-radius: 10% 0% 0% 10%;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.items li.enabled{
+background-color:#00bf68;
+color: white;
+}
+
+.items li.enabled .listButton{
+    text-decoration: line-through;
+}
+
+.items li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+
+  .items li.enabled:hover {
+    background-color: #FF3031;
+    color: white;
+  }
