@@ -1,0 +1,22 @@
+#heading{
+    font-size: 50px;
+}
+input{
+    height: 40px;
+    width: 480px;
+    font-size: 25px;
+    margin-left: 15px;
+}
+button{
+    background-color: #ffffff;
+    height: 44px;
+    width: 80px;
+    margin-left: 15px;
+    border-radius: 10%;
+    text-align: center;
+    color:black;
+    font-size: 25px;
+}
+#buttonId{
+    margin-top: 20px;
+}

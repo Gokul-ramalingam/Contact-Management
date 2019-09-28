@@ -3,7 +3,7 @@
   <input type="text" #note placeholder="Add Note..." name="addnotes" value="">
   <button (click)='data.addNotes(note.value,1,disable);note.value=""'>Save</button>
 <ul class="items">
-  <li *ngFor = 'let note of notes' (click)='data.changeData(note.id1,note.datas,enable)' [ngClass]='{"enabled":note.isDone}'>
+  <li *ngFor = 'let note of notes' (click)='data.changeData(note.id1)' [ngClass]='{"enabled":note.isDone}'>
     <span class="editButton" (click)='editNotes(note.id1)'>Edit</span> &nbsp;
     <span class="listButton">{{note.datas}}</span>
   </li>

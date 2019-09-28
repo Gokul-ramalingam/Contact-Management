@@ -23,4 +23,8 @@ export class NotesComponent implements OnInit {
   });
   }
 
+  editNotes(id)
+  {
+    this.router.navigate(['edit',id],{relativeTo:this.route});
+  }
 }

@@ -1,0 +1,8 @@
+/var/www/SpringBoot-Angular6-login-example/back-end/src/main/java/com/social/dao/UserRepository.java
+/var/www/SpringBoot-Angular6-login-example/back-end/src/main/java/com/social/controller/AccountController.java
+/var/www/SpringBoot-Angular6-login-example/back-end/src/main/java/com/social/entities/User.java
+/var/www/SpringBoot-Angular6-login-example/back-end/src/main/java/com/social/services/UserService.java
+/var/www/SpringBoot-Angular6-login-example/back-end/src/main/java/com/social/services/AppUserDetailsService.java
+/var/www/SpringBoot-Angular6-login-example/back-end/src/main/java/com/social/util/CustomErrorType.java
+/var/www/SpringBoot-Angular6-login-example/back-end/src/main/java/com/social/config/WebConfig.java
+/var/www/SpringBoot-Angular6-login-example/back-end/src/main/java/com/social/SpringBootSocialAuthApplication.java

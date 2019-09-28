@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { DataService } from './data.service';
 import { AppComponent } from './app.component';
+import { HttpModule } from '@angular/http';
 import { AppRoutingModule,routingComponent } from './/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
