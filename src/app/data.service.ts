@@ -13,7 +13,8 @@ export class DataService {
   public deleteId;
   public baseUrl = 'http://localhost:8080/notes'
   
-
+  private headers = new Headers({'Content-Type': 'application/json'}); 
+  private headers1 = new Headers({'Content-Type': 'application/x-wwww-form-urlencoded'})
   constructor(private http:Http , private http1:HttpClient) { }
 
   getData()
@@ -41,9 +42,19 @@ changeData(id1)
   {
    this.id += id1;
     id1 = this.id;
-    let json = JSON.stringify({"id1":id1,"datas":datas,"isDone":isDone});
-        let params = 'json=' + json;
-  return this.http.post(`${this.baseUrl}/post`, params);
+    const url = `${this.baseUrl}/post/id1=${id1}&datas=${datas}&isDone=${isDone}`
+  return this.http.post(url, {headers:this.headers1});
   }
 
+  updateData(id1,datas,isDone)
+  {
+  // return this.http.delete('http://localhost:8080/weather/delete?id1='+id1)  
+  //     .catch(this.errorHandler);   
+
+      const url = `${this.baseUrl}/patch/id1=${id1}&datas=${datas}`;
+      return this.http.patch(url, {headers:this.headers1})
+      .toPromise()
+      .then(() => null)
+      .catch(this.errorHandler);
+  }
 }

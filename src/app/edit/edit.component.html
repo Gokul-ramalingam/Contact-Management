@@ -3,7 +3,7 @@
   <div *ngIf='note.id1 == notesId'>
       <input #editedData type="text" [value]="note.datas" name="addnotes">
       <div id="buttonId">
-          <button (click)='data.changeData(notesId,editedData.value,note.isDone)'>Save</button>
+          <button (click)='data.updateData(notesId,editedData.value,note.isDone)'>Save</button>
           <button (click)='back()'>Back</button>
         </div>
     </div>
